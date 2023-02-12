@@ -1,0 +1,138 @@
+   .portfolio{
+        flex-direction: column;
+        height: 75vh;
+        &-title{
+            flex-direction: column;
+            h1{
+                font-size: 3em;
+                font-family: 'Helvetica-bold', sans-serif;
+                text-decoration: none;
+                color: $color-text;
+                //Glow effect with $color-highlight
+                
+            }
+            p{
+                text-align: center;
+                font-size: 1.4em;
+                font-weight: 100;
+                width: 600px;
+                font-family: 'Helvetica', sans-serif;
+                text-decoration: none;
+                color: $color-subtext;
+            }
+        }
+        &-link{
+            height: 400px;
+            color: $color-text;
+            flex-direction: column;
+            margin: 10px;
+            &-title{
+                height: 100px;
+                width: 50px;
+                font-size: 1.5rem;
+                margin-top: 0px;
+                opacity: 0;
+                transform: translateY(-75px);
+                transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            }
+            &-img{
+                position: absolute;
+                height: 250px;
+                width: 50px;
+                object-fit: cover;
+                transition: height 0.3s ease-in-out;
+            }
+            &-tech{
+                flex-direction: column;
+                transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                &__icon{
+                    margin-top: 5px;
+                    font-size: 1.7em;
+                    color: $color-text;
+                    background-color: $color-text;
+                    border-radius: 50%;
+                    height: 45px;
+                    width: 45px;
+                    transform: translateY(20px);
+                }
+            }
+
+            &:hover &-img{
+                transition: height 0.3s ease-in-out;
+                height: 270px;
+            }
+
+            &:hover &-tech{
+                transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                transform: translateY(115px);
+            }
+
+            &:hover &-title{
+                transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+    }
+
+    //Mobile version
+    @media screen and (max-width: 768px) {
+        .portfolio{
+            height: 100vh;
+            &-title{
+                h1{
+                    font-size: 2em;
+                }
+                p{
+                    font-size: 0.85em;
+                    width: 330px;
+                }
+            }
+            &-link{
+                margin: 12px;
+                height: 300px;
+                &-title{
+                    display: none;
+                }
+                &-img{
+                    height: 220px;
+                }
+                &-tech{
+                    margin-top: 100px;
+                    &__icon{
+                        height: 35px;
+                        width: 35px;
+                        font-size: 1.4em;
+                        transform: translateY(15px);
+                    }
+                }
+            }
+        }
+    }
+
+    .fa-html5{
+        color: #E34C25;
+    }
+    .fa-css3-alt{
+        color: #264DE4;
+    }
+
+    .fa-magnifying-glass{
+        color: $color-highlight;
+    }
+
+    .fa-node-js{
+        color: #68A063;
+    }
+
+    .fa-js{
+        color: #F0DB4F;
+    }
+
+    .fa-database{
+        color: $color-highlight;
+    }
+
+    .fa-sass{
+        color: #CC6699;
+    }

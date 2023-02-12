@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'GT-Super';
+    src: url(/public/fonts/GT-Super-Display-Super.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url(/public/fonts/Helvetica.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica-bold';
+    src: url(/public/fonts/Helvetica-Bold.woff2);
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-family: 'GT-Super', sans-serif;
+}
+
+p, a{
+    font-family: 'Helvetica', sans-serif;
+    text-decoration: none;
+}

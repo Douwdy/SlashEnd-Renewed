@@ -1,0 +1,74 @@
+.footer{
+    height: 140px;
+    width: 100%;
+    border-top: 3px solid $color-highlight;
+    bottom: 0px;
+    &-info{
+        margin: 20px;
+        color: white;
+        h6{
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    &-links{
+        width: 200px;
+        margin-right: 50px;
+        &_twitter{
+            color: #00ACEE;
+            font-size: 37px;
+        }
+        &_malt{
+            height: 37px;
+        }
+        &_git{
+            color: #F1502F;
+            font-size: 37px;
+        }
+        &_envelope{
+            color: $color-highlight;
+            font-size: 37px;
+        }
+    }
+}
+
+// Mobile version
+@media screen and (max-width: 768px) {
+    .footer{
+        height: 150px;
+        &-info{
+            margin: 20px;
+            h6{
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+            p{
+                margin: 0;
+            }
+        }
+        &-links{
+            width: 90px;
+            flex-wrap: wrap;
+            height: 90px;
+            margin-right: 40px;
+            &_twitter{
+                color: #00ACEE;
+                font-size: 37px;
+            }
+            &_malt{
+                height: 37px;
+            }
+            &_git{
+                color: #F1502F;
+                font-size: 37px;
+            }
+            &_envelope{
+                color: $color-highlight;
+                font-size: 37px;
+            }
+        }
+    }
+}
